@@ -1,0 +1,31 @@
+/*   header   */
+.mobileHeader{
+    @apply hidden bg-white h-16 grid-cols-12 max-sm:grid;
+}
+.mobileMenuItem{
+    @apply mt-3 border-2 border-gray-300 h-9 w-9 rounded-full;
+}
+/*  foooter   */
+
+.secTopFooter{
+    @apply  grid grid-cols-12 mt-5 gap-5 border-b-2 border-gray-300;
+}
+
+.footerTopCard{
+    @apply col-span-3 max-sm:col-span-6 grid grid-cols-12 border-l-2 h-24 my-4 border-gray-300;
+}
+
+.footerTopSecIcon{
+    @apply p-5 col-span-3 h-20 rounded-full justify-center text-white;
+}
+.footerTopSecIcon svg {
+    @apply text-xl m-auto mt-2 w-5 max-sm:mr-0;
+}
+.footerTopCard:last-child{
+    @apply border-none border-l-0 !important;
+}
+@media screen and (max-width:640px){
+    .footerTopCard:nth-child(2){
+        border-left:none !important;
+    }
+}

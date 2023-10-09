@@ -1,0 +1,16 @@
+.HeroTitle{
+    @apply text-themeColorO text-5xl max-sm:text-3xl font-extrabold mt-14 font-shabnam ;
+}
+.HeroDes{
+    @apply mt-7 text-gray-400 text-lg text-justify ml-16;
+}
+.HeroInput{
+    @apply border-gray-300 border-2 col-span-8 max-sm:col-span-11 p-3 rounded-full ;
+}
+.HeroBtn{
+    @apply col-span-1 bg-themeColorB rounded-full mr-[-50px] mt-1 px-2 w-11 h-11 left-0;
+}
+
+.OurProCat{
+    @apply cursor-pointer col-span-2 text-gray-400 font-shabnam max-sm:col-span-4 max-sm:text-xs py-1 md:border-none border-2 mt-3 max-sm:border-gray-300 rounded-full;
+}

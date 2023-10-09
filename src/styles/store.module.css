@@ -1,0 +1,14 @@
+/*  store details   */ 
+
+.sizeBox{
+    @apply w-12 float-right mx-1 text-sm pt-1 
+    text-center leading-10 h-14 rounded-full 
+    border-2 border-gray-400 font-bold cursor-pointer;
+}
+
+.DesTitle {
+    @apply w-full font-shabnam text-sm mb-3 mt-6;
+}
+.tabTitle{
+    @apply cursor-pointer hover:text-black transition duration-150 text-gray-400 p-2 col-span-2;
+}

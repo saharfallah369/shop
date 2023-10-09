@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: Shabnam;
+  src: url('../assents/fonts/Shabnam.eot');
+  src: url('../assents/fonts/Shabnam.eot?#iefix') format('Shabnam-opentype'),
+        url('../assents/fonts/Shabnam.woff') format('woff'),
+        url('../assents/fonts/Shabnam.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -17,6 +27,56 @@
 }
 
 body {
-  margin: 0;
-  padding: 0;
+  direction: rtl;
+  @apply overflow-x-hidden max-sm:overflow-x-hidden m-0 p-0 bg-gray-50;
+
+}
+
+.container{
+  @apply mx-auto relative w-[80%];
+}
+
+.topMenu{
+  @apply justify-center grid grid-cols-5 text-xs  ;
+}
+.topMenu li{
+  @apply  float-right px-2 text-center text-gray-400 font-normal py-3 hover:text-orange-500 transition ease-out 
+}
+.topMenu li a{
+  @apply relative tracking-[1px] my-3 font-bold float-right h-8;
+}
+.topMenu li a::after{
+  @apply content-[''] bg-gray-500 left-[15%] h-[3px] absolute -bottom-[5px] rounded-xl w-[0%] duration-300;
+}
+.topMenu li a:hover::after{
+  @apply w-[70%];
+}
+.isActiveMenu{@apply text-orange-500 transition ease-out}
+.topMenu li a.isActiveMenu::after{
+  @apply content-[''] bg-gray-500 left-[15%] h-[3px] absolute -bottom-[5px] rounded-xl w-[70%] duration-300;
+}
+.topLeft{
+  @apply h-9 text-center w-9 bg-gray-100 hover:bg-gray-500 hover:text-white transition ease-in-out duration-300 rounded-full mt-1 cursor-pointer justify-center;
+}
+.topLeft svg{
+  @apply w-5 mx-auto mt-2;
+}
+
+/*    hero section */
+.right-hero{
+  background: url(../assents/images/HeorBg.png) no-repeat;
+  background-size: 50%;
+  background-position: right;
+  min-height: 400px;
+}
+
+.CatTitle{
+  background: url(../assents/images/BorderProCard.png) no-repeat;
+  background-position: center;
+  background-size: 90%;
+}
+@media screen and (max-width:640px){
+  .CatTitle{
+    background:none;
+  }
 }
