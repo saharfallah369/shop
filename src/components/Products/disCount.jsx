@@ -1,12 +1,6 @@
 import React,{useRef} from "react";
 import Btn from "@/components/common/Btn"
-import ProductLeatest from '@/components/Products/productLeatestCard'
-
-import 'swiper/css';
-import 'swiper/css/bundle';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, Pagination, Navigation } from 'swiper/modules';
-import { useSwiper } from 'swiper/react';
+import DiscountSlider from "@/components/Sliders/discountSider";
 
 
 const disCount = () =>{
@@ -44,60 +38,7 @@ const disCount = () =>{
 
                 <div className="col-span-8 max-sm:col-span-10 max-sm:col-start-2  max-sm:h-auto max-sm:mt-0 h-[350px] mt-10">
                     
-                    <Swiper 
-                    breakpoints={{
-                        500:{
-                            slidesPerView: 1
-                        },
-                        1500:{
-                            slidesPerView: 3
-                        },
-                        1300:{
-                            slidesPerView: 3
-                        },
-                        1000:{
-                            slidesPerView: 3
-                        },
-                        700:{
-                            slidesPerView: 2
-                        },
-                        600:{
-                            slidesPerView: 2
-                        },
-                    }}
-                    spaceBetween={50} 
-                    slidesPerView={3} 
-                    modules={[Autoplay, Pagination, Navigation]}
-                    navigation={{ 
-                        nextEl: ".right-a", 
-                        prevEl: ".left-a" 
-                    }}
-                    loop={true}
-                    autoplay = {{
-                        delay:2000,
-                        disableOnInteraction: false,
-                    }}
-                    centeredSlides={true}
-                    className="container content-center h-[450px] mySwiper">
-
-                        <SwiperSlide>
-                            <ProductLeatest disCount="20" />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <ProductLeatest disCount="25" />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <ProductLeatest disCount="50" />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <ProductLeatest disCount="10" />
-                        </SwiperSlide>
-
-
-
-
-                        
-                    </Swiper>
+                    <DiscountSlider />
 
                 </div>
 

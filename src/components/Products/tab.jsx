@@ -17,7 +17,7 @@ const TabsComponent = () => {
             </div>
                 
 
-            <div className="p-3 mt-6 container max-sm:w-full max-sm:clear-both">
+            <div className="p-3 mt-6 container max-sm:w-full max-sm:clear-both max-sm:overflow-x-hidden">
                 <div className={openTab === 1 ? " grid gap-8 grid-cols-12" : "hidden"}>
                     {" "}
                     <OurProductCat />

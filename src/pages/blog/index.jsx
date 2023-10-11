@@ -2,6 +2,8 @@ import React, { useEffect } from "react";
 import MainLayout from "@/components/Layout/MainLayout";
 import { useRouter } from 'next/router';
 import { useState } from "react";
+import Image from "next/image";
+import img from "@/assents/images/841.png"
 import TestSlider from "@/components/Products/testSlider";
 const blog = () =>{
     // const [slider,setSlider] = useState(false);
@@ -23,7 +25,10 @@ const blog = () =>{
                 : " "}>
                 click
             </div> */}
+            {/*  */}
             <TestSlider />
+            <Image src={img} alt="" width={100} height={100} 
+            className="w-28 h-64 testAnim" />
         </>
     )
 }

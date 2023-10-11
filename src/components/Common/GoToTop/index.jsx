@@ -31,7 +31,7 @@ const GoToTop = () =>{
                             <path stroke-linecap="round" stroke-linejoin="round" d="M12 19.5v-15m0 0l-6.75 6.75M12 4.5l6.75 6.75" />
                         </svg>
                     </span>
-                    <span className="mt-[-20px] text-gray-400">رفتن به بالا</span>
+                    <span className="mt-[-20px] text-gray-400 ">رفتن به بالا</span>
                 </div>
             )}
         </>

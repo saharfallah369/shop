@@ -1,8 +1,9 @@
 .HeroTitle{
-    @apply text-themeColorO text-5xl max-sm:text-3xl font-extrabold mt-14 font-shabnam ;
+    @apply text-themeColorO text-5xl max-sm:text-2xl font-extrabold mt-14 font-shabnam 
+    max-sm:text-center;
 }
 .HeroDes{
-    @apply mt-7 text-gray-400 text-lg text-justify ml-16;
+    @apply mt-7 text-gray-400 text-lg text-justify ml-16 max-sm:mx-[auto] max-sm:my-2;
 }
 .HeroInput{
     @apply border-gray-300 border-2 col-span-8 max-sm:col-span-11 p-3 rounded-full ;

@@ -37,8 +37,7 @@ function TestSlider() {
           },
         }}
         modules={[Pagination]}
-        className="mySwiper !min-h-[400px] !pb-16"
-      >
+        className="mySwiper !min-h-[400px] !pb-16">
         <SwiperSlide className='border-2 border-red-500'>
             <div className="relative cursor-pointer min-h-80 content-center">
                 <div className="bg-white justify-center ">

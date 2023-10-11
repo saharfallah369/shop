@@ -30,8 +30,8 @@ export default function Home() {
         <div className="w-screen" >
           <Hero/>
           <Products />
-          {/* <NewProducts /> */}
-          <TestSlider />
+          {/* <TestSlider />  */}
+          <NewProducts />
           <DisCount />
           <OurProduct />
           <Ads />

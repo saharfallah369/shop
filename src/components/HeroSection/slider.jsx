@@ -10,6 +10,7 @@ const SliderTop = () =>{
     const sliders = ["841.png" , "1.png" ,"841.png" , "1.png" ];
     const [bigSliderIndex , setBigSliderIndex] = useState(1);
     const [smallSliderIndex , setSmallSliderIndex] = useState(0);
+    
     const [slider , setSlider] = useState(false);
 
     useEffect(()=>{
@@ -28,17 +29,22 @@ const SliderTop = () =>{
         return () => clearInterval(sliderInteval);
     })
 
+    const [cssClass,SetCssClass]=useState(false);
     useEffect(() => {
-        
+        const sliderAnim = setInterval(() => {
+            SetCssClass(true);
+        }, 2999)
+        return () => clearInterval(sliderAnim);
         }, []);
 
     return(
         <>
             <div className="col-span-6 relative justify-center grid grid-cols-12 max-sm:col-span-12 max-sm:mt-80">
-                <div className="col-span-8 max-sm:col-span-12 h-[450px]">
+                <div className="col-span-8 max-sm:col-span-12 h-[450px] max-sm:h-[380px]">
                     <Image src={click} alt="" className="absolute"/>
                     <div className="border-black  border-2 w-[80%] m-auto rounded-full">
-                        <Image src={"/Image/"+sliders[bigSliderIndex]} width="300" height={400} alt="" className={"rounded-full z-50 w-full mr-[-10px] mt-[-15px]"} />
+                        <Image src={"/Image/"+sliders[bigSliderIndex]} width="300" height={400} alt="" className={cssClass ? "rounded-full z-50 w-full mr-[-10px] mt-[-15px] testAnim" : "rounded-full z-50 w-full mr-[-10px] mt-[-15px]"} />
+                        
                     </div>
                 </div>
 

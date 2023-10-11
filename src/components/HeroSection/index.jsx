@@ -21,7 +21,7 @@ const Hero = () =>{
             <div className="container grid grid-cols-12 pt-1">
                 <div className="col-span-6 max-sm:col-span-12 h-20 relative">
                     <Image src={Star} alt="" className="absolute left-0 animate-pulse" />
-                    <h2 className={style.HeroTitle }>نگران استایلت نباش!!!</h2>
+                    <h2 className={style.HeroTitle}>نگران استایلت نباش!!!</h2>
                     <h6 className={style.HeroDes}>
                     با طیف گسترده ای از لباس های
                     شیک و با کیفیت ما دیگه نگران استایل تابستونیت نباش، انـواع تی شرت
@@ -52,11 +52,9 @@ const Hero = () =>{
                 </div>
                 <Image src={arrow} alt="" className="absolute max-sm:hidden right-[40%] top-[300px]" />
                 <SliderTop />{/* hero section slider */}
-
-
             </div>
 
-            <div className="hidden grid-cols-10 gap-2 mt-3 h-16 max-sm:grid">
+            <div className="hidden grid-cols-10 gap-2 z-50 pt-3 bg-white h-16 max-sm:grid max-sm:fixed max-sm:bottom-0">
                 <MobileMenu />
             </div>
         </div>

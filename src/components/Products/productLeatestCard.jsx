@@ -4,7 +4,7 @@ import img from "@/assents/images/Rectangle.png"
 const productLeatest = ({disCount="",section=false}) =>{
     return(
         <>  
-            <div className={ section ? " content-center col-span-3 max-sm:col-span-6 relative cursor-pointer min-h-80" : " col-span-4 relative cursor-pointer min-h-80"}>
+            <div className={ section ? " content-center col-span-3 max-sm:col-span-6  relative cursor-pointer min-h-80" : " col-span-4 relative cursor-pointer min-h-80"}>
                 <div className="bg-white justify-center ">
                     {disCount ? <span className="py-4 px-2 left-1 text-center text-xs w-14 top-1 absolute rounded-full bg-red-500 text-white">
                         {disCount} % 

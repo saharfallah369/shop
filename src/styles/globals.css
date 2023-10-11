@@ -80,3 +80,14 @@ body {
     background:none;
   }
 }
+.testAnim{
+  transition: 0.3s;
+  animation: slide 0.3s;
+}
+
+@keyframes slide {
+  0% {transform: scaleX(1.0);}
+  50% {transform: scaleX(0.0);}
+  100% {transform: scaleX(1.0);}
+  
+}
